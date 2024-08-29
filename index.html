@@ -14,45 +14,46 @@
 
   <div class="launcher">
     <div class="sidebar">
-      <div class="tab selected active-tab" onclick="showTab('home')">Home</div>
-      <div class="tab" onclick="showTab('archive')">Archive</div>
-      <div class="tab" onclick="showTab('serverj')">Servers/Server Jars</div>
+      <div class="tab selected active-tab" onclick="showTab('home')">メインのバージョン</div>
+      <div class="tab" onclick="showTab('archive')">古いバージョン</div>
+      <div class="tab" onclick="showTab('serverj')">サーバー用ファイル</div>
 
-      <div class="tab" onclick="showTab('external')">Serverlist</div>
-      <div class="tab" onclick="showTab('credits')">Credits</div>
+      <div class="tab" onclick="showTab('external')">サーバーリスト</div>
+      <div class="tab" onclick="showTab('credits')">クレジット</div>
 
-      <div class="tab" onclick="showTab('settings')">Settings</div>
-      <div class="tab" onclick="window.open('https://discord.gg/tWFvtYCKb7')">Discord</div>
+      <div class="tab" onclick="showTab('settings')">設定</div>
+      <div class="tab" onclick="window.open('https://google.com/')">Googleに逃げる</div>
     </div>
     <div class="content">
       <!-- Home Tab -->
       <div id="home" class="tab-content active">
         <h1 id="home-page-text">Eclipseへようこそ</h1>
         <div class="dropdown">
-          <label for="version-home">バージョン:</label>
+          <label for="version-home">バージョンを選択</label>
           <select id="version-home">
             <option value="1.8.8">EaglercraftX 1.8</option>
             <option value="forge">EaglerForge</option>
             <option value="1.9.4">EaglerL 1.9 Snapshot 0.5</option>
+            <option value="1.5.2JP">Eaglercraft 1.5.2 Japanese</option>
             <option value="bettereag">BetterEagler</option>
             <option value="reborn">EaglerReborn</option>
 
           </select>
         </div>
-        <button class="launch-button" onclick="launchVersion()">起動</button>
+        <button class="launch-button" onclick="launchVersion()">起動！</button>
         <div class="news-widgets">
-          <h2>Latest News</h2>
+          <h2>最近の更新</h2>
           <div class="news-item">1.4.1 - Preset Themes</div>
         </div>
-        <div class="tab" onclick="showTab('news')">Show More News</div>
+        <div class="tab" onclick="showTab('news')">すべての更新履歴を見る</div>
 
       </div>
 
       <!-- Archive Tab -->
       <div id="archive" class="tab-content">
-        <h1>Eaglercraft アーカイブ</h1>
+        <h1>その他のEaglercraft</h1>
         <div class="dropdown">
-          <label for="archiveVer">古いバージョン:</label>
+          <label for="archiveVer">バージョンを選択</label>
           <select id="archiveVer">
             <option value="1.5.2">Eaglercraft 1.5.2</option>
             <option value="b1.7.3">Beta 1.7.3</option>
@@ -63,12 +64,12 @@
             <option value="classic">Classic</option>
           </select>
         </div>
-        <button class="launch-button" onclick="launchArchive()">起動</button>
+        <button class="launch-button" onclick="launchArchive()">起動！</button>
       </div>
 
       <!-- News Tab -->
       <div id="news" class="tab-content">
-        <h1>News</h1>
+        <h1>更新履歴</h1>
         <h4>July 2024</h4>
         <div class="news-item">1.4.1 - Preset Themes</div>
 
@@ -84,7 +85,7 @@
 
       <!-- Credits Tab -->
       <div id="credits" class="tab-content">
-        <h1>Credits</h1>
+        <h1>クレジット</h1>
         <p>Here is a list of people who have made this project possible:</p>
         <ul>
           <li>Lax1dude, who made Eaglercraft</li>
